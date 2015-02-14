@@ -5,6 +5,7 @@
  *   Author: Adam
  */ 
 ; WIP. Delays currently used instead of checking if the LCD is busy. Not really optimal.
+; Works for ATMEGA328P. 
 .ORG 0x000
 rjmp main
 
