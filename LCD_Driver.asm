@@ -5,7 +5,7 @@
  *   Author: Adam
  */ 
 ; WIP. Delays currently used instead of checking if the LCD is busy. Not really optimal.
-
+.ORG 0x000
 rjmp main
 
 
