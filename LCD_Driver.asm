@@ -4,8 +4,9 @@
  *  Created: 1/28/2015 5:35:47 PM
  *   Author: Adam
  */ 
+; WIP. Delays currently used instead of checking if the LCD is busy. Not really optimal.
 
- rjmp main
+rjmp main
 
 
 
@@ -67,7 +68,7 @@ rcall sendinstr
 
 
 
-
+; This just loads the initial message. You can also just send letters instead.
 ldi yh, 0x01
 ldi yl, 0x00
 rcall rsletter
@@ -178,6 +179,6 @@ brne loadloop
 ret
 
 name:
-.db "Adam Franks",0
+.db "INITIAL MSG",0
 
 
